@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fa2-triton"
+version = "0.1.0"
+description = "CS336 FlashAttention-2 experiments implemented with Triton."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "triton",
+    "einops",
+]
+
+[project.optional-dependencies]
+bench = [
+    "jaxtyping",
+    "hydra-core",
+    "omegaconf",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

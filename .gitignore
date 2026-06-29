@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local experiment outputs
+outputs/
+profiles/
+*.nsys-rep
+*.sqlite
+*.log
+
+# Keep the organized project tree; ignore original root-level scratch copies.
+/benchmark.py
+/c.py
+/ddp.py
+/flash_python.py
+/flash_triton.py
+/flash_triton_mha_benchmark.py
+/flash_triton_mha_benchmark_fused_bwd.py
+/flash_triton_mha_benchmark_fused_bwd_mixed_precision_v2.py
+/multi_para.py
+/test.py
+/__init__.py
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
